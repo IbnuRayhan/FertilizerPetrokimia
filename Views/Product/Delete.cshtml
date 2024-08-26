@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "Hapus Produk";
+}
+
+<div class="container">
+    <h1>Hapus Produk Pupuk</h1>
+    <p>Apakah Anda yakin ingin menghapus produk ini?</p>
+
+    <div class="product-details">
+        <h2>@Model.Name</h2>
+        <p>Harga: @Model.Price</p>
+        <p>Deskripsi: @Model.Description</p>
+    </div>
+
+    <form asp-action="DeleteConfirmed">
+        <input type="hidden" name="Id" value="@Model.Id" />
+        <button type="submit" class="btn-delete">Hapus</button>
+        <a href="/Product" class="btn-cancel">Batal</a>
+    </form>
+</div>

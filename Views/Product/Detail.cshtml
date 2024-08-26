@@ -1,0 +1,32 @@
+@model FertilizerPetrokimia.Models.Product
+
+<h1>Detail Data</h1>
+<div>
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Nama
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.name)
+        </dd>
+        <dt class = "col-sm-2">
+            Tipe
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.type)
+        </dd>
+        <dt class = "col-sm-2">
+            Deskripsi
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.description)
+        </dd>
+        <dt class = "col-sm-2">
+            Harga
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.price)
+        </dd>
+    </dl>
+    <a asp-action="Index">Kembali</a>
+</div>
